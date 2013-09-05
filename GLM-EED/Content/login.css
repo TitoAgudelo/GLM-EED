@@ -1,0 +1,144 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-image: url(../Images/Login/fondo.jpg);
+	background-position: left -50px;
+	color: #212121;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.1;
+}
+p {
+	margin-bottom: 0.5em;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#head {
+	background-color: #4DAD48;
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+	color: #FFF;
+	height: 8.75em;
+	padding-right: 3em;
+	padding-left: 3em;
+}
+#head h1 {
+	font-size: 3.5em;
+	padding-top: 0.75em;
+}
+#head h1 img {
+	float: left;
+	margin-top: -0.35em;
+	margin-right: 0.28em;
+}
+#login {
+	background-color: rgba(255,255,255,0.7);
+	border: 1px solid #FFF;
+	margin-left: 3em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	width: 21em;
+}
+.login-title {
+	background-color: #FFF;
+	padding-top: 0.75em;
+	padding-right: 1.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1.5em;
+}
+.login-title h2 {
+	color: #066600;
+	font-weight: normal;
+	font-size: 1.3em;
+}
+.login-module {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	font-size: 0.875em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.login-module h3 {
+	font-size: 1.143em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+.login-module input {
+	font-size: 1em;
+	padding-top: 0.5em;
+	padding-right: 0.25em;
+	padding-bottom: 0.5em;
+	padding-left: 0.25em;
+	width: 96%;
+}
+.login-module img {
+	cursor: pointer;
+}
+#login-ok {
+	float: right;
+	margin-bottom: 0.5em;
+}
+.login-button {
+	color: #FFF;
+	background-color: #006600;
+	display: inline-block;
+	font-size: 1.143em;
+	padding-top: 0.5em;
+	padding-right: 0.75em;
+	padding-bottom: 0.5em;
+	padding-left: 0.75em;
+	text-decoration: none;
+}
+.login-button:hover {
+	background-color: #009900;
+	text-decoration: none;
+}
+.login-module ol {
+	font-size: 0.875em;
+	margin-left: 1.5em;
+}
+.highlight {
+	color: #C00;
+}
+.float-right {
+	float: right;
+}
+.clearfix {
+	clear: both;
+}
+
+@media screen and (max-width:320px){
+#login {
+	background-color: rgba(255,255,255,0.7);
+	border: 1px solid #FFF;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+	width: auto;
+}
+#head {
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+	color: #FFF;
+	height: 7em;
+	padding-right: 3em;
+	padding-left: 1em;
+}
+#head h1 {
+	font-size: 2.5em;
+	padding-top: 1em;
+}
+#head h1 img {
+	float: left;
+	height: auto;
+	margin-right: 0.28em;
+	margin-top: -0.55em;
+	width: 1.5em;
+}

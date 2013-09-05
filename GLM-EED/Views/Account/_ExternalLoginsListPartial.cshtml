@@ -1,0 +1,65 @@
+﻿<div id="login" ng-controller="CtrlForm">
+    <div class="login-title">
+        <h2><strong>MiGLM</strong> Ingreso</h2>
+        <p>Use su correo registrado</p>
+    </div>
+    <div class="login-module">
+        
+        @model ICollection<AuthenticationClientData>
+
+        @if (Model.Count == 0)
+        {
+            <div class="message-info">
+                <p>There are no external authentication services configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=252166">this article</a>
+                for details on setting up this ASP.NET application to support logging in via external services.</p>
+            </div>
+        }
+        else
+        {
+            using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }))
+            {
+            @Html.AntiForgeryToken()
+            <fieldset id="socialLoginList">
+                <h3>Ingrese con su cuenta de:</h3>
+                <p>
+                @foreach (AuthenticationClientData p in Model)
+                {
+                    <button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName" title="Log in using your @p.DisplayName account">@p.DisplayName</button>
+                }
+                </p>
+            </fieldset>
+            }
+        }
+        
+        @*<h3>Ingrese con su cuenta de:</h3>
+        <p align="center">
+            <img src="~/Images/Login/google.png" width="140" height="50" alt="Google" ng-show="google"/> 
+            <img src="~/Images/Login/yahoo.png" width="140" height="50" alt="Yahoo!" ng-show="yahoo"/>
+            <img src="~/Images/Login/outlook.png" width="140" height="50" alt="Outlook" ng-show="outlook"/>
+            <img src="~/Images/Login/glm.png" width="140" height="50" alt="Gimnasio La Montaña - Correo" ng-show="glm" />
+        </p>*@
+    </div>
+    <div class="login-module" ng-show="user">
+        <h3>Use su contraseña del GLM:</h3>
+        <p>
+            <label>
+                <input type="password" name="pass" id="pass" required/>
+            </label>
+        </p>
+        <p><a href="#" class="login-button" id="login-ok">Ingresar</a></p>
+        <p class="highlight">Verifique su contraseña</p>
+        <p><a href="#">Olvidé mi contraseña</a></p>
+        <div class="clearfix"></div>
+    </div>
+    <div class="login-module" ng-show="newpassword">
+        <h3>Por favor solicite su contraseña:</h3>
+        <p align="center"><a href="#" class="login-button">Solicite su contraseña</a></p>
+    </div>
+    <div class="login-module" ng-show="newregister">
+        <h3 class="highlight">Su usuario no está registrado en nuestro sistema.</h3>
+        <ol>
+            <li> Verifique que su correo esté escrito correctamente.</li>
+            <li> Comuníquese con nosotros al teléfono<br /> 57 (1) 676 1861 o escríbanos a soporte@glm.edu.co.</li>
+        </ol>
+    </div>
+</div>
