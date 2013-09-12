@@ -1,9 +1,25 @@
-﻿<div id="login" ng-controller="CtrlForm">
+﻿@section Scripts {
+    var url = '@Url.Action("person", "api")?email=';
+}
+
+<div id="login" ng-controller="CtrlForm">
     <div class="login-title">
         <h2><strong>MiGLM</strong> Ingreso</h2>
         <p>Use su correo registrado</p>
     </div>
     <div class="login-module">
+        <h3>Correo Electronico:</h3>
+        <p>
+        <label>
+            <form name="myForm">
+                <input type="email" name="email" id="user" ng-model="email" ng-change="updateOptions()" required/>
+                <span class="error" ng-show="myForm.email.$error.required">Campo Requerido!</span>
+                <span class="error" ng-show="myForm.email.$error.email">No es un correo electronico valido!</span>
+            </form>       
+        </label>
+        </p>
+    </div>
+    <div class="login-module" ng-show="google || yahoo || outlook || glm">
         
         @model ICollection<AuthenticationClientData>
 
@@ -16,7 +32,7 @@
         }
         else
         {
-            using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }))
+            using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl  }))
             {
             @Html.AntiForgeryToken()
             <fieldset id="socialLoginList">
@@ -24,20 +40,20 @@
                 <p>
                 @foreach (AuthenticationClientData p in Model)
                 {
-                    <button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName" title="Log in using your @p.DisplayName account">@p.DisplayName</button>
+                   <button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName" title="Log in using your @p.DisplayName account">@p.DisplayName</button>
                 }
                 </p>
             </fieldset>
             }
         }
         
-        @*<h3>Ingrese con su cuenta de:</h3>
+        <h3>Ingrese con su cuenta de:</h3>
         <p align="center">
             <img src="~/Images/Login/google.png" width="140" height="50" alt="Google" ng-show="google"/> 
             <img src="~/Images/Login/yahoo.png" width="140" height="50" alt="Yahoo!" ng-show="yahoo"/>
             <img src="~/Images/Login/outlook.png" width="140" height="50" alt="Outlook" ng-show="outlook"/>
             <img src="~/Images/Login/glm.png" width="140" height="50" alt="Gimnasio La Montaña - Correo" ng-show="glm" />
-        </p>*@
+        </p>
     </div>
     <div class="login-module" ng-show="user">
         <h3>Use su contraseña del GLM:</h3>

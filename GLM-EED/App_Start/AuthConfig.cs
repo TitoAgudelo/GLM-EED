@@ -30,6 +30,7 @@ namespace GLM_EED
             gglm.Add("Icon", "/Images/Login/glm.png");
 
             OAuthWebSecurity.RegisterGoogleClient("Gimnasio La Montaña", gglm);
+            
             //OAuthWebSecurity.RegisterGoogleClient();
         }
     }
