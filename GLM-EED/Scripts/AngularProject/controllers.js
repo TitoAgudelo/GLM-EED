@@ -2,7 +2,36 @@
 
 /* Controllers */
 
-function CtrlForm($scope, $http) {
+
+personModule.controller('personsController', ['$scope', 'dataFactory',
+        function ($scope, dataFactory) {
+            var provider;
+            $scope.updateOptions = function () {
+                var email = $scope.email;
+
+                if (provider) {
+                    $scope[provider] = false;
+                }
+
+                getPersons();
+
+                function getPersons() {
+                    dataFactory.getPersons(email)
+                        .success(function (pers) {
+                            if (pers) {
+                                provider = pers.Provider;
+                                $scope[provider] = true;
+                            }
+                        })
+                        .error(function (error) {
+                            $scope.status = 'Unable to load person data: ' + error.message;
+                        });
+                }
+            };
+        }]);
+
+
+//function CtrlForm($scope, $http) {
     //$scope.updateOptions = function () {
     //    $scope.glm = $scope.email.endsWith('@glm.edu.co');
     //    $scope.google = $scope.email.endsWith('@gmail.com');
@@ -13,29 +42,29 @@ function CtrlForm($scope, $http) {
     //    $scope.newregister = $scope.email.endsWith('@noregister.com');
     //};
 
-    var provider;
+//    var provider;
 
-    $scope.updateOptions = function () {
-        var email = $scope.email;
-        var apiUrl = '../api/person';
+//    $scope.updateOptions = function () {
+//        var email = $scope.email;
+//        var apiUrl = '../api/person';
 
-        if (provider) {
-            $scope[provider] = false;
-        }
+//        if (provider) {
+//            $scope[provider] = false;
+//        }
 
-        $http.get(apiUrl + '?email=' + email).
-        success(function (data, status, headers, config) {
-            if (data) {
-                provider = data.Provider;
-                console.log(data);
-                $scope[provider] = true;
-            } else {
-                console.log("error data is undefind");
-            }
-        }).error(function (data, status, headers, config) {
-            // called asynchronously if an error occurs
-            // or server returns response with an error status.  
-            console.log(data);
-        });
-    };
-}
+//        $http.get(apiUrl + '?email=' + email).
+//        success(function (data, status, headers, config) {
+//            if (data) {
+//                provider = data.Provider;
+//                console.log(data);
+//                $scope[provider] = true;
+//            } else {
+//                console.log("error data is undefind");
+//            }
+//        }).error(function (data, status, headers, config) {
+//            // called asynchronously if an error occurs
+//            // or server returns response with an error status.  
+//            console.log(data);
+//        });
+//    };
+//}
