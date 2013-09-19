@@ -1,27 +1,19 @@
 ﻿html {
-    background-color: #e2e2e2;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
 }
 
 a {
-    color: #333;
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
     text-decoration: underline;
 }
-
-    a:link, a:visited,
-    a:active, a:hover {
-        color: #333;
-    }
 
 header, footer, hgroup,
 nav, section {
@@ -52,7 +44,7 @@ mark {
 
 h1, h2, h3,
 h4, h5, h6 {
-    color: #000;
+    color: #565653;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -85,26 +77,6 @@ h5, h6 {
 
 /* main layout
 ----------------------------------------------------------*/
-#head {
-    background-color: #4DAD48;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
-    color: #FFF;
-    height: 8.75em;
-    padding-right: 3em;
-    padding-left: 3em;
-}
-
-#head h1 {
-    color: #FFF;
-    font-size: 3.5em;
-    display: inline-block;
-}
-
-#head h1 img {
-    float: left;
-    margin-top: -0.35em;
-    margin-right: 0.28em;
-}
 
 .content-wrapper {
     margin: 0 auto;
@@ -114,11 +86,11 @@ h5, h6 {
 #body {
     background-color: #efeeef;
     background-image: url(../Images/Login/fondo.jpg);
-	background-position: left -50px;
+	background-position: left -230px;
     clear: both;
 	font-size: 16px;
     line-height: 1.1;
-    min-height: 550px;
+    min-height: 600px;
     padding-bottom: 35px;
 }
 
@@ -181,9 +153,22 @@ footer {
 }
 
 .login-title h2 {
-    color: #066600;
+    color: #216D7D;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    list-style-type: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.login-title p {
+    color: #565653;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
     font-weight: normal;
-    font-size: 1.3em;
+    line-height: 1em;
+    margin-top: 0.5em;
 }
 
 .login-module {
@@ -209,16 +194,7 @@ footer {
 #loginAcount {
     display: block;
     text-align: Right;
-    margin-top: 90px;
 }
-
-    #loginAcount span {
-        background-color: rgba(255,255,255,0.7);
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        padding: 5px;
-    }
 
     #loginAcount a {
         text-decoration: none;
@@ -257,30 +233,6 @@ footer {
 
 /* menu
 ----------------------------------------------------------*/
-ul#menu {
-    font-size: 1.3em;
-    font-weight: 600;
-    margin: 0 0 5px;
-    padding: 0;
-    text-align: right;
-}
-
-    ul#menu li {
-        display: inline;
-        list-style: none;
-        padding-left: 15px;
-    }
-
-        ul#menu li a {
-            background: none;
-            color: #999;
-            text-decoration: none;
-        }
-
-        ul#menu li a:hover {
-            color: #333;
-            text-decoration: none;
-        }
 
 
 /* page elements
@@ -507,7 +459,7 @@ input, textarea {
     background: #fff;
     color: #333;
     font-size: 1.2em;
-    margin: 5px 0 6px 0;
+    margin: 5px 0 0 0;
     padding: 5px;
     width: 300px;
 }
@@ -572,6 +524,8 @@ textarea {
 
 .error {
     color: #e80c4d;
+    font-size: 0.75em;
+    margin-left: 5px;
 }
 
 /* styles for validation helpers */

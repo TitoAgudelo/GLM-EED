@@ -2,7 +2,7 @@
 <html lang="en" ng-app="myApp">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>Gimnasio La Montaña</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -10,18 +10,68 @@
     </head>
     <body>
         <header>
-            <div id="head">
-                <h1><img src="~/Images/Login/logo.png"  width="74" height="97" alt="Gimnasio La Montaña" />MiGLM</h1>
-                <div class="float-right">
-                    <section id="loginAcount">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
-                        </ul>
-                    </nav>
-                </div>
+            <h1><img src="~/Images/Home/GLM-logo.png" width="123" height="75" alt="Gimnasio La Montaña">Gimnasio La Montaña</h1>
+            <div>
+            @if (Request.IsAuthenticated) {
+                <text>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="menu-icon">
+                                    <img src="~/Images/Home/books.png" alt="Clases" width="32" height="32">
+                                </span>
+                                <span class="menu-item">Clases
+                                    <span class="menu-description">Planeación, informes, etc.</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-icon">
+                                    <img src="~/Images/Home/profile.png" alt="Clases" width="32" height="32">
+                                </span>
+                                <span class="menu-item">Estudiantes
+                                    <span class="menu-description">Observador, listas, etc.</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-icon">
+                                    <img src="~/Images/Home/user.png" alt="Clases" width="32" height="32">
+                                </span>
+                                <span class="menu-item">Empleados
+                                    <span class="menu-description">Certificados, datos, etc.</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="menu-icon">
+                                    <img src="~/Images/Home/signup.png" alt="Clases" width="32" height="32">
+                                </span>
+                                <span class="menu-item">Gestión de Calidad
+                                    <span class="menu-description">Buzón, documentación, etc.</span>
+                                </span>
+                            </a>
+                        </li>
+                        @*<li>
+                            <a href="#">
+                                <span class="menu-icon">
+                                    <img src="~/Images/Home/file.png" alt="Clases" width="32" height="32">
+                                </span>
+                                <span class="menu-item">Informes
+                                    <span class="menu-description">Académicos, boletines, etc.</span>
+                                </span>
+                            </a>
+                        </li>*@
+                    </ul>
+                </nav>
+                </text>
+            } else {
+            
+            }
             </div>
         </header>
         <div id="body">
