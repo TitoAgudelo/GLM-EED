@@ -3,7 +3,7 @@
 /* Services */
 
 
-personModule.service('dataService', ['$http', function ($http) {
+app.service('dataService', ['$http', function ($http) {
     var urlBase = '../api/person';
 
     this.getPersons = function () {
@@ -17,7 +17,7 @@ personModule.service('dataService', ['$http', function ($http) {
 }]);
 
 
-personModule.factory('dataFactory', ['$http', function ($http) {
+app.factory('dataFactory', ['$http', function ($http) {
     var urlBase = '../api/person';
     var dataFactory = {};
 

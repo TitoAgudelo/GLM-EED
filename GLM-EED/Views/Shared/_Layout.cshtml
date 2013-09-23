@@ -56,21 +56,6 @@
                                 </span>
                             </a>
                         </li>
-                        @*<li>
-                            <a href="#">
-                                <span class="menu-icon">
-                                    <img src="~/Images/Home/file.png" alt="Clases" width="32" height="32">
-                                </span>
-                                <span class="menu-item">Informes
-                                    <span class="menu-description">Académicos, boletines, etc.</span>
-                                </span>
-                            </a>
-                        </li>*@
-                    </ul>
-                    <ul>
-                        <li>
-                            @Html.Partial("_LoginPartial")
-                        </li>
                     </ul>
                 </nav>
                 </text>
@@ -79,6 +64,23 @@
             }
             </div>
         </header>
+        <aside ng-controller="navController">
+            <header>
+                @Html.Partial("_LoginPartial")
+                <button ng-click="options()">Menu</button>
+            </header>
+            <nav ng-show="content">
+                <ul>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Calendario</a></li>
+                    <li><a href="#">Horario</a></li>
+                    <li><a href="#">Directorio</a></li>
+                    <li><a href="#">Menú escolar</a></li>
+                    <li><a href="#">Cadenas de comunicación</a></li>
+                </ul>
+            </nav>
+        </aside>
         <div id="body">
             @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">

@@ -3,7 +3,7 @@
 /* Controllers */
 
 
-personModule.controller('personsController', ['$scope', 'dataFactory',
+app.controller('personsController', ['$scope', 'dataFactory',
         function ($scope, dataFactory) {
             var provider;
             $scope.updateOptions = function () {
@@ -30,6 +30,13 @@ personModule.controller('personsController', ['$scope', 'dataFactory',
             };
         }]);
 
+app.controller('navController', ['$scope', function ($scope) {
+        $scope.content = false;
+        $scope.options = function () {
+            $scope.content = !$scope.content;
+        };
+    }]);
+
 
 //function CtrlForm($scope, $http) {
     //$scope.updateOptions = function () {
@@ -42,29 +49,5 @@ personModule.controller('personsController', ['$scope', 'dataFactory',
     //    $scope.newregister = $scope.email.endsWith('@noregister.com');
     //};
 
-//    var provider;
 
-//    $scope.updateOptions = function () {
-//        var email = $scope.email;
-//        var apiUrl = '../api/person';
 
-//        if (provider) {
-//            $scope[provider] = false;
-//        }
-
-//        $http.get(apiUrl + '?email=' + email).
-//        success(function (data, status, headers, config) {
-//            if (data) {
-//                provider = data.Provider;
-//                console.log(data);
-//                $scope[provider] = true;
-//            } else {
-//                console.log("error data is undefind");
-//            }
-//        }).error(function (data, status, headers, config) {
-//            // called asynchronously if an error occurs
-//            // or server returns response with an error status.  
-//            console.log(data);
-//        });
-//    };
-//}

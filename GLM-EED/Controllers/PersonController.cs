@@ -13,6 +13,7 @@ namespace GLM_EED.Controllers
         Person[] persons = new Person[]
         {
             new Person {Id = 1, Email = "tito@glm.edu.co", Provider = "glm"},
+            new Person {Id = 5, Email = "danielmorenog@glm.edu.co", Provider = "glm"},
             new Person {Id = 2, Email = "tito@gmail.com", Provider = "google"},
             new Person {Id = 3, Email = "tito@yahoo.com", Provider = "microsoft"},
             new Person {Id = 4, Email = "tito@hotmail.com", Provider = "yahoo"}

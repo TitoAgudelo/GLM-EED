@@ -208,7 +208,7 @@ namespace GLM_EED.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult ExternalLogin(string provider, string returnUrl)
         {
-            return new ExternalLoginResult(provider, Url.Action("ExternalLoginCallback", new { ReturnUrl = returnUrl }));
+            return new ExternalLoginResult(provider, Url.Action("ExternalLoginCallback", new { ReturnUrl = returnUrl}));
         }
 
         //

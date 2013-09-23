@@ -27,9 +27,9 @@ namespace GLM_EED
             //    appSecret: "");
 
             Dictionary<string, object> gglm = new Dictionary<string,object>();
-            gglm.Add("Icon", "/Images/Login/glm.png");
-            gglm.Add("Email", "titoagudelo@glm.edu.co");
-
+            gglm.Add("Icon", "../Images/Login/glm.png");
+            gglm.Add("Email", "#Email=titoagudelo@glm.edu.co");
+            
             OAuthWebSecurity.RegisterGoogleClient("Gimnasio La Montaña", gglm);
             
             //OAuthWebSecurity.RegisterGoogleClient();

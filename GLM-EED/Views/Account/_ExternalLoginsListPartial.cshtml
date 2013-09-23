@@ -36,20 +36,22 @@
                 <p>
                 @foreach (AuthenticationClientData p in Model)
                 {
-                   <button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName" title="Log in using your @p.DisplayName account">@p.DisplayName</button>
+                    <a href='@p.ExtraData["Email"]'><button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName"
+                        title="Log in using your @p.DisplayName account"><img src='@p.ExtraData["Icon"].ToString()' /></button></a>
+                    
                 }
                 </p>
             </fieldset>
             }
         }
         
-        <h3>Ingrese con su cuenta de:</h3>
+        @*<h3>Ingrese con su cuenta de:</h3>
         <p align="center">
             <img src="~/Images/Login/google.png" width="140" height="50" alt="Google" ng-show="google"/> 
             <img src="~/Images/Login/yahoo.png" width="140" height="50" alt="Yahoo!" ng-show="yahoo"/>
             <img src="~/Images/Login/outlook.png" width="140" height="50" alt="Outlook" ng-show="outlook"/>
             <img src="~/Images/Login/glm.png" width="140" height="50" alt="Gimnasio La Montaña - Correo" ng-show="glm" />
-        </p>
+        </p>*@
     </div>
     <div class="login-module" ng-show="user">
         <h3>Use su contraseña del GLM:</h3>
