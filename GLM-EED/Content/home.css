@@ -1,0 +1,12 @@
+#cambiando-aviso {	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);	-moz-box-shadow:    0px 0px 3px rgba(0, 0, 0, 0.25);	box-shadow:         0px 0px 3px rgba(0, 0, 0, 0.25);	background-color: #FFDB4E;	clear: both;	display: block;}#cambiando-aviso .estamos-cambiando-ico {	background-color: #E6C748;	width: 100px;	float: left;    margin: 15px 0;}#cambiando-aviso .estamos-cambiando-ico #cambiando {	height: 70px;	width: 70px;	margin-left: 15px;	margin-top: 15px;}#cambiando-aviso .estamos-cambiando-mensaje {	padding-top: 0.25em;
+    display: inline-block;
+    padding-left: 1.5em;
+    width: 84%;}#cambiando-aviso .estamos-cambiando-mensaje h2 {	font-size: 20px;
+    color: #000;
+    margin-bottom: 0;    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);    font-weight:900;}#cambiando-aviso .estamos-cambiando-mensaje p {    color: #323232;
+    font-size: 14px;}#galeria {	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);	-moz-box-shadow:    0px 0px 3px rgba(0, 0, 0, 0.25);	box-shadow:         0px 0px 3px rgba(0, 0, 0, 0.25);	background-color: #FFF;	display: inline-block;    padding: 0 0;    width: 58%;
+    margin-right: 3%;}    #galeria img {        height: 273px;    }#menu {	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);	-moz-box-shadow:    0px 0px 3px rgba(0, 0, 0, 0.25);	box-shadow:         0px 0px 3px rgba(0, 0, 0, 0.25);	background-color: #FFDB4E;	display: inline-block;    padding: 0;}    #menu img {        width: 100%;    }#menu .cenefa h2 {    font-size: 20px;
+    color: #000;
+    margin-bottom: 0;    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);    font-weight:900;}#calendario {	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);	-moz-box-shadow:    0px 0px 3px rgba(0, 0, 0, 0.25);	box-shadow:         0px 0px 3px rgba(0, 0, 0, 0.25);	background-color: #FFDB4E;	display: block;}.cenefa {    display: inline-block;	height: 2.1em;	padding-top: 0.4em;	padding-left: 0.4em;}#calendario .cenefa h2 {    font-size: 20px;
+    color: #000;
+    margin-bottom: 0;    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);    font-weight:900;}

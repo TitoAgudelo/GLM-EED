@@ -204,6 +204,7 @@
     <Content Include="Content\Foundation\foundation.css" />
     <Content Include="Content\Foundation\normalize.css" />
     <Content Include="Content\login.css" />
+    <Content Include="Content\home.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -261,9 +262,13 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Home\cambiando.ai" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\Home\books.png" />
+    <Content Include="Images\Home\cambiando.svg" />
     <Content Include="Images\Home\file.png" />
+    <Content Include="Images\Home\GLM-foto-menu.jpg" />
+    <Content Include="Images\Home\GLM-foto1.jpg" />
     <Content Include="Images\Home\GLM-logo.png" />
     <Content Include="Images\Home\personal-menu.png" />
     <Content Include="Images\Home\profile.png" />

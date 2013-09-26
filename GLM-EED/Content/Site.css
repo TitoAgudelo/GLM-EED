@@ -85,8 +85,8 @@ h5, h6 {
 
 #body {
     background-color: #efeeef;
-    background-image: url(../Images/Login/fondo.jpg);
-	background-position: left -230px;
+    /*background-image: url(../Images/Login/fondo.jpg);
+	background-position: left -230px;*/
     clear: both;
 	font-size: 16px;
     line-height: 1.1;

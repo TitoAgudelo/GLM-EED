@@ -36,7 +36,8 @@ namespace GLM_EED
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/style.css",
-                        "~/Content/site.css"));
+                        "~/Content/site.css",
+                        "~/Content/home.css"));
 
             bundles.Add(new StyleBundle("~/Content/Foundation/css").Include("~/Content/Foundation/foundation.css",
                         "~/Content/Foundation/normalize.css"));
