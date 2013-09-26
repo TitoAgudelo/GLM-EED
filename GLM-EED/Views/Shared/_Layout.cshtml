@@ -6,65 +6,81 @@
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/Foundation/css")
         @Scripts.Render("~/bundles/modernizr")
     </head>
     <body>
-        <header>
-            <h1><img src="~/Images/Home/GLM-logo.png" width="123" height="75" alt="Gimnasio La Montaña">Gimnasio La Montaña</h1>
-            <div>
+        <header class="row header-nav">
+            <div class="large-1 columns">
+                <img id="image-logo" src="~/Images/Home/GLM-logo.png" width="123" height="75" alt="Gimnasio La Montaña">
+            </div>
             @if (Request.IsAuthenticated) {
                 <text>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span class="menu-icon">
-                                    <img src="~/Images/Home/books.png" alt="Clases" width="32" height="32">
-                                </span>
-                                <span class="menu-item">Clases
-                                    <span class="menu-description">Planeación, informes, etc.</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="menu-icon">
-                                    <img src="~/Images/Home/profile.png" alt="Clases" width="32" height="32">
-                                </span>
-                                <span class="menu-item">Estudiantes
-                                    <span class="menu-description">Observador, listas, etc.</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="menu-icon">
-                                    <img src="~/Images/Home/user.png" alt="Clases" width="32" height="32">
-                                </span>
-                                <span class="menu-item">Empleados
-                                    <span class="menu-description">Certificados, datos, etc.</span>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="menu-icon">
-                                    <img src="~/Images/Home/signup.png" alt="Clases" width="32" height="32">
-                                </span>
-                                <span class="menu-item">Gestión de Calidad
-                                    <span class="menu-description">Buzón, documentación, etc.</span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="large-9 columns">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon">
+                                <img src="~/Images/Home/books.png" alt="Clases" width="32" height="32">
+                            </span>
+                            <span class="menu-item">Clases
+                                <span class="menu-description">Planeación, informes, etc.</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon">
+                                <img src="~/Images/Home/profile.png" alt="Clases" width="32" height="32">
+                            </span>
+                            <span class="menu-item">Estudiantes
+                                <span class="menu-description">Observador, listas, etc.</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon">
+                                <img src="~/Images/Home/user.png" alt="Clases" width="32" height="32">
+                            </span>
+                            <span class="menu-item">Empleados
+                                <span class="menu-description">Certificados, datos, etc.</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon">
+                                <img src="~/Images/Home/signup.png" alt="Clases" width="32" height="32">
+                            </span>
+                            <span class="menu-item">Gestión de Calidad
+                                <span class="menu-description">Buzón, documentación, etc.</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="menu-icon">
+                                <img src="~/Images/Home/file.png" alt="Clases" width="32" height="32">
+                            </span>
+                            <span class="menu-item">Informes
+                                <span class="menu-description">Académicos, boletines, etc.</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
                 </text>
             } else {
             
             }
+            <div class="large-1 columns" id="personal-menu">
+                <a href="#">
+                    <img src="~/Images/Home/personal-menu.png" width="30" height="25" alt="Personal menu">
+                </a>
             </div>
         </header>
-        <aside ng-controller="navController">
+        <aside ng-controller="navController" style="display:none">
             <header>
                 @Html.Partial("_LoginPartial")
                 <button ng-click="options()">Menu</button>

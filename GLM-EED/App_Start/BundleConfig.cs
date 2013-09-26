@@ -37,7 +37,9 @@ namespace GLM_EED
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/style.css",
                         "~/Content/site.css"));
-            
+
+            bundles.Add(new StyleBundle("~/Content/Foundation/css").Include("~/Content/Foundation/foundation.css",
+                        "~/Content/Foundation/normalize.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
