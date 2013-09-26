@@ -1,7 +1,7 @@
 Gimnasio La Montaña
 ==============
 
-Nueva Intranet Gimnasio La Montaña
+Nueva Intranet
 --------------
 
 **Requirements**
