@@ -132,6 +132,11 @@ aside header a:hover {
 aside header .menu-description {
 	font-size: 0.75em;
 }
+
+aside header h2 {
+    font-size: 0.8em;
+}
+
 aside nav {
 	padding: 1em;
 }

@@ -80,7 +80,9 @@
                 </a>
             </div>
         </header>
-        <aside ng-controller="navController" style="display:none">
+        @if (Request.IsAuthenticated) {
+        <text>
+        <aside ng-controller="navController">
             <header>
                 @Html.Partial("_LoginPartial")
                 <button ng-click="options()">Menu</button>
@@ -97,6 +99,10 @@
                 </ul>
             </nav>
         </aside>
+        </text>
+        } else {
+            
+        }
         <div id="body">
             @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">

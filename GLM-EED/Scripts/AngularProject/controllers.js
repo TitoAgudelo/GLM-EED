@@ -24,7 +24,7 @@ app.controller('personsController', ['$scope', 'dataFactory',
                             }
                         })
                         .error(function (error) {
-                            $scope.status = 'Unable to load person data: ' + error.message;
+                            $scope.noUser = true;
                         });
                 }
             };
