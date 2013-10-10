@@ -15,6 +15,11 @@ services.service('dataService', ['$http', function ($http) {
         return $http.get(urlBase + '/' + id);
     };
 
+    this.getItems = function (category) {
+        var urlItems = '../api/menuLunch';
+        return $http.get(urlItems + category);
+    };
+
 }]);
 
 
@@ -29,6 +34,11 @@ services.factory('dataFactory', ['$http', function ($http) {
 
     dataFactory.getPerson = function (id) {
         return $http.get(urlBase + '/' + id);
+    };
+
+    dataFactory.getItems = function (category) {
+        var urlItems = '../api/menuLunch';
+        return $http.get(urlItems + category);
     };
 
     return dataFactory;
