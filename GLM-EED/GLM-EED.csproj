@@ -191,6 +191,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -205,6 +206,7 @@
     <Content Include="Content\Foundation\normalize.css" />
     <Content Include="Content\login.css" />
     <Content Include="Content\home.css" />
+    <Content Include="Content\menu.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -282,6 +284,13 @@
     <Content Include="Images\Login\outlook.png" />
     <Content Include="Images\Login\yahoo.gif" />
     <Content Include="Images\Login\yahoo.png" />
+    <Content Include="Images\Menu\Icon-beb.svg" />
+    <Content Include="Images\Menu\Icon-carbo.svg" />
+    <Content Include="Images\Menu\Icon-entr.svg" />
+    <Content Include="Images\Menu\Icon-esp.svg" />
+    <Content Include="Images\Menu\Icon-post.svg" />
+    <Content Include="Images\Menu\Icon-prot.svg" />
+    <Content Include="Images\Menu\Icon-veg.svg" />
     <Content Include="Scripts\AngularProject\app.js" />
     <Content Include="Scripts\AngularProject\common.js" />
     <Content Include="Scripts\AngularProject\controllers.js" />
@@ -317,6 +326,26 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\Lib\foundation.min.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.abide.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.alerts.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.clearing.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.cookie.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.dropdown.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.forms.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.interchange.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.joyride.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.magellan.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.orbit.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.placeholder.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.reveal.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.section.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.tooltips.js" />
+    <Content Include="Scripts\Lib\foundation\foundation.topbar.js" />
+    <Content Include="Scripts\Lib\vendor\custom.modernizr.js" />
+    <Content Include="Scripts\Lib\vendor\jquery.js" />
+    <Content Include="Scripts\Lib\vendor\zepto.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -358,6 +387,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\_LoginPartial.cshtml" />
+    <Content Include="Views\MenuLunch\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

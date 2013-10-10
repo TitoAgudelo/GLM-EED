@@ -2,10 +2,15 @@
 
 /* Directives */
 
+var directives = angular.module('glm.directives', []);
 
-angular.module('myApp.directives', []).
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-  }]);
+directives.directive('directive1', function () {
+    return {
+        restrict: 'A',
+        replace: true,
+        templateUrl: "Url/index.html",
+        scope: {
+                
+        }
+    }
+});

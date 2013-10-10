@@ -1,0 +1,98 @@
+/* menu options */
+
+.menu-desing span {
+	background-color: #E6E6E6;
+	color: #9F9F9F;
+	cursor: pointer;
+	display: inline-block;
+	padding: 12px 15px;
+	text-align: center;
+	width: 32%;
+}
+
+.menu-desing span:hover {
+	background-color: #49A9F3;
+	color: white;
+}
+
+.menu-complete span {
+	background-color: #009900;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 12px 15px;
+	text-align: center;
+	width: 100%;
+}
+
+#menu-date {
+	margin-top: 10px;
+	text-align: center;
+	color: #000000;
+	margin-top: 1.9375em;
+	margin-left: 0.9375em;
+	margin-right: 0.9375em;
+	padding: 10px;
+}
+
+.menu-days {
+	background-color: #E6E6E6;
+	cursor: pointer;
+	margin-left: 0.9375em;
+	margin-right: 0.9375em;
+	padding: 0;
+}
+
+.menu-days span {
+	background-color: #E6E6E6;
+	color: #2B2B2B;
+	display: inline-block;
+	padding: 12px 15px;
+	text-align: center;
+	width: 13.94%;
+
+}
+
+.menu-days span:hover {
+	background-color: #FF921E;
+}
+
+.menu-days span.special {
+	background-color: #CCCCCC;
+}
+
+.menu-days span.special:hover {
+	background-color: #3EA9F5;
+	color: white;
+}
+
+.menu-components {
+	border: solid 2px #E6E6E6;
+	border-top: none;
+	margin-left: 0.9375em;
+	margin-right: 0.9375em;
+}
+
+.menu-components span {
+	color: #999999;
+	display: inline-block;
+	margin: 15px 0px;
+	text-align: center;
+}
+
+.menu-components .menu-image-ico, .menu-add {
+	background-color: #E6E6E6;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+}
+
+.menu-components .menu-image-ico .menu-image-svg {
+	cursor: pointer;
+}
+
+.menu-components .menu-add:hover {
+	background-color: #49A9F3;
+	color: white;
+}

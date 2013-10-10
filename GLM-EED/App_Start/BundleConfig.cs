@@ -37,7 +37,8 @@ namespace GLM_EED
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/style.css",
                         "~/Content/site.css",
-                        "~/Content/home.css"));
+                        "~/Content/home.css",
+                        "~/Content/menu.css"));
 
             bundles.Add(new StyleBundle("~/Content/Foundation/css").Include("~/Content/Foundation/foundation.css",
                         "~/Content/Foundation/normalize.css"));

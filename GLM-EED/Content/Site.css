@@ -341,6 +341,7 @@ article {
 aside {
     float: right;
     width: 25%;
+    z-index: 1;
 }
 
     aside ul {

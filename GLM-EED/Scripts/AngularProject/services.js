@@ -2,8 +2,9 @@
 
 /* Services */
 
+var services = angular.module('glm.services', []);
 
-app.service('dataService', ['$http', function ($http) {
+services.service('dataService', ['$http', function ($http) {
     var urlBase = '../api/person';
 
     this.getPersons = function () {
@@ -17,7 +18,7 @@ app.service('dataService', ['$http', function ($http) {
 }]);
 
 
-app.factory('dataFactory', ['$http', function ($http) {
+services.factory('dataFactory', ['$http', function ($http) {
     var urlBase = '../api/person';
     var dataFactory = {};
 

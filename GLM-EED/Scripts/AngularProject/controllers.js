@@ -2,8 +2,9 @@
 
 /* Controllers */
 
+var ctrls = angular.module('glm.controllers', []);
 
-app.controller('personsController', ['$scope', 'dataFactory',
+ctrls.controller('personsController', ['$scope', 'dataFactory',
         function ($scope, dataFactory) {
             var provider;
             $scope.updateOptions = function () {
@@ -30,7 +31,7 @@ app.controller('personsController', ['$scope', 'dataFactory',
             };
         }]);
 
-app.controller('navController', ['$scope', function ($scope) {
+ctrls.controller('navController', ['$scope', function ($scope) {
         $scope.content = false;
         $scope.options = function () {
             $scope.content = !$scope.content;
