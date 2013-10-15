@@ -30,6 +30,7 @@
 	margin-top: 10px;
 	text-align: center;
 	color: #000000;
+    font-size: 1.5em;
 	margin-top: 1.9375em;
 	margin-left: 0.9375em;
 	margin-right: 0.9375em;
@@ -39,6 +40,7 @@
 .menu-days {
 	background-color: #E6E6E6;
 	cursor: pointer;
+    margin-left: 0.9375em;
 	margin-right: 0.9375em;
 	padding: 0;
     padding-left: 0 !important;
@@ -75,21 +77,22 @@
     width: 96.7% !important;
 }
 
-.menu-components div {
+.menu-components div.day-component {
 	color: #999999;
 	display: inline-block;
-	margin: 15px 0px;
+	margin: 15px 8px;
 	text-align: center;
 }
 
-.menu-components span {
+.menu-components .day-component span {
     display: inline-block;    
 }
 
 .menu-components .menu-image-ico, .menu-add {
 	background-color: #E6E6E6;
 	cursor: pointer;
-	padding: 10px;
+	padding: 0.6em;
+    margin: 0.5em 0;
 }
 
 .menu-components .menu-image-ico .menu-image-svg {
