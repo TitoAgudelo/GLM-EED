@@ -206,7 +206,7 @@ footer {
 }
 
     #login a {
-        background-color: #d3dce0;
+        /*background-color: #d3dce0;*/
         margin-left: 10px;
         margin-right: 3px;
         padding: 2px 3px;
@@ -525,7 +525,6 @@ textarea {
 .error {
     color: #e80c4d;
     font-size: 0.75em;
-    margin-left: 5px;
 }
 
 /* styles for validation helpers */

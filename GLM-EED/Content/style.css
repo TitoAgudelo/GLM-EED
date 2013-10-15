@@ -276,3 +276,18 @@ footer {
 		width: 5%;
 	}    
 }
+
+button.socialBtn {
+    border: none;
+    background-color: white;
+}
+
+button.socialBtn:hover {
+    background-color: white;    
+}
+
+fieldset {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}

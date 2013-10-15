@@ -1791,14 +1791,20 @@ fieldset {
   display: none; }
 
 span.error, small.error {
-  display: block;
-  padding: 0.375em 0.25em;
-  margin-top: 0;
-  margin-bottom: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
   font-size: 0.75em;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
   background: #fe6e6e;
-  color: #333333; }
+  color: white;
+  padding: 0.575em 1em;
+  width: auto;
+
+}
 
 .error input,
 .error textarea,

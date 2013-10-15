@@ -28,11 +28,12 @@ namespace GLM_EED
 
             Dictionary<string, object> gglm = new Dictionary<string,object>();
             gglm.Add("Icon", "../Images/Login/glm.png");
-            gglm.Add("Email", "#Email=titoagudelo@glm.edu.co");
-            
             OAuthWebSecurity.RegisterGoogleClient("Gimnasio La Montaña", gglm);
+
+            Dictionary<string, object> yahoo = new Dictionary<string,object>();
+            yahoo.Add("Icon", "../Images/Login/yahoo.png");
+            OAuthWebSecurity.RegisterYahooClient("Yahoo", yahoo);
             
-            //OAuthWebSecurity.RegisterGoogleClient();
         }
     }
 }

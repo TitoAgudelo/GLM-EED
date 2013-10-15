@@ -32,13 +32,12 @@
             {
             @Html.AntiForgeryToken()
             <fieldset id="socialLoginList">
-                <h3>Ingrese con su cuenta de:</h3>
+                <h4>Ingrese con su cuenta de:</h4>
                 <p>
                 @foreach (AuthenticationClientData p in Model)
                 {
-                    <a href='@p.ExtraData["Email"]'><button type="submit" name="provider" value="@p.AuthenticationClient.ProviderName"
+                    <a ng-show="@p.AuthenticationClient.ProviderName"><button class="socialBtn" type="submit" name="provider" value="@p.AuthenticationClient.ProviderName"
                         title="Log in using your @p.DisplayName account"><img src='@p.ExtraData["Icon"].ToString()' /></button></a>
-                    
                 }
                 </p>
             </fieldset>
