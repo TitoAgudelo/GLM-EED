@@ -7,7 +7,7 @@
 	display: inline-block;
 	padding: 12px 15px;
 	text-align: center;
-	width: 32%;
+	width: 26%;
 }
 
 .menu-desing span:hover {
@@ -39,9 +39,10 @@
 .menu-days {
 	background-color: #E6E6E6;
 	cursor: pointer;
-	margin-left: 0.9375em;
 	margin-right: 0.9375em;
 	padding: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .menu-days span {
@@ -50,8 +51,7 @@
 	display: inline-block;
 	padding: 12px 15px;
 	text-align: center;
-	width: 13.94%;
-
+	width: 10.94%;
 }
 
 .menu-days span:hover {
@@ -72,20 +72,24 @@
 	border-top: none;
 	margin-left: 0.9375em;
 	margin-right: 0.9375em;
+    width: 96.7% !important;
 }
 
-.menu-components span {
+.menu-components div {
 	color: #999999;
 	display: inline-block;
 	margin: 15px 0px;
 	text-align: center;
 }
 
+.menu-components span {
+    display: inline-block;    
+}
+
 .menu-components .menu-image-ico, .menu-add {
 	background-color: #E6E6E6;
 	cursor: pointer;
 	padding: 10px;
-	width: 100%;
 }
 
 .menu-components .menu-image-ico .menu-image-svg {
