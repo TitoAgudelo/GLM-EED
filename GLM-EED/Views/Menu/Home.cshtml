@@ -8,78 +8,78 @@
 		    <h1>Men&uacute Escolar</h1>
 	    </div>
     </div>
-    <div class="row">
-	    <div class="large-6 columns menu-desing">
-		    <span>Dise&ntildear Men&uacute</span>
-		    <span>Ver Lista</span>
-		    <span>Previsualizar</span>
-	    </div>
-	    <div class="large-2 large-offset-3 columns menu-complete">
-		    <span>Publicar</span>
-	    </div>
-    </div>
-    <div class="row">
-	    <div class="large-12 columns" id="menu-date">
-		    <span>Octubre 07 / 2013 - Octubre 13 / 2013</span>
-	    </div>
-    </div>
-    <div>
-	    <div class="row">
-		    <div class="large-12 columns menu-days">
-			    <span class="special">< Anterior</span>
-			    <span>Lunes</span>
-			    <span>Martes</span>
-			    <span>Miercoles</span>
-			    <span>Jueves</span>
-			    <span>Viernes</span>
-			    <span class="special">Siguiente ></span>
-		    </div>
-	    </div>
-	    <div class="row">
-            <div class="large-12 columns  menu-components">
-		        <div class="day-component" ng-click="listItems({category: 'bebidas'})">
-			        <span>Bebidas</span>
-			        <div class="menu-image-ico">
-    			        <embed class="menu-image-svg" src="~/Images/Menu/Icon-beb.svg" type="image/svg+xml" />
-			        </div>
-			        <span class="menu-add">Agregar</span>
-		        </div>
-		        <div class="day-component" ng-click="listItems({category: 'entrada'})">
-			        <span>Entrada</span>
-			        <div class="menu-image-ico">
-				        <embed class="menu-image-svg" src="~/Images/Menu/Icon-entr.svg" type="image/svg+xml" />
-			        </div>
-			        <span class="menu-add">Agregar</span>
-		        </div>
-		        <div class="day-component" ng-click="listItems({category: 'proteinas'})">
-			        <span>Proteinas</span>
-			        <div class="menu-image-ico">
-				        <embed class="menu-image-svg" src="~/Images/Menu/Icon-prot.svg" type="image/svg+xml" />
-			        </div>
-			        <span class="menu-add">Agregar</span>
-		        </div>
-		        <div class="day-component" ng-click="listItems({category: 'carbohidratos'})">
-			        <span>Carbohidratos</span>
-			        <div class="menu-image-ico">
-				        <embed class="menu-image-svg" src="~/Images/Menu/Icon-carbo.svg" type="image/svg+xml" />
-			        </div>
-			        <span class="menu-add">Agregar</span>
-		        </div>
-		        <div class="day-component" ng-click="listItems({category: 'vegetales'})">
-			        <span>Vegetales</span>
-			        <div class="menu-image-ico">
-				        <embed class="menu-image-svg" src="~/Images/Menu/Icon-veg.svg" type="image/svg+xml" />
-			        </div>
-			        <span class="menu-add">Agregar</span>
-		        </div>
-		        <div class="day-component" ng-click="listItems({category: 'postre'})">
-			        <span>Postre</span>
-			        <div class="menu-image-ico">
-				        <embed class="menu-image-svg" src="~/Images/Menu/Icon-post.svg" type="image/svg+xml" />
-			        </div>
-			        <span class="menu-add">Agregar</span>
-		        </div>
-            </div>
-	    </div>
-    </div>
+    <tabs>
+    	<pane title="Diseñar Menú">
+    		<div class="row">
+				<div class="large-12 columns" id="menu-date">
+					<span>Octubre 07 / 2013 - Octubre 13 / 2013</span>
+				</div>
+			</div>
+			<div>
+				<div class="row">
+					<div class="large-12 columns menu-days">
+						<span class="special">< Anterior</span>
+						<span>Lunes</span>
+						<span>Martes</span>
+						<span>Miercoles</span>
+						<span>Jueves</span>
+						<span>Viernes</span>
+						<span class="special">Siguiente ></span>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="large-12 columns  menu-components">
+	                    <div class="day-component" ng-click="listItems({category: 'bebidas'})">
+		                    <span>Bebidas</span>
+		                    <div class="menu-image-ico">
+    		                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-beb.svg" type="image/svg+xml" />
+		                    </div>
+		                    <span class="menu-add">Agregar</span>
+	                    </div>
+	                    <div class="day-component" ng-click="listItems({category: 'entrada'})">
+		                    <span>Entrada</span>
+		                    <div class="menu-image-ico">
+			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-entr.svg" type="image/svg+xml" />
+		                    </div>
+		                    <span class="menu-add">Agregar</span>
+	                    </div>
+	                    <div class="day-component" ng-click="listItems({category: 'proteinas'})">
+		                    <span>Proteinas</span>
+		                    <div class="menu-image-ico">
+			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-prot.svg" type="image/svg+xml" />
+		                    </div>
+		                    <span class="menu-add">Agregar</span>
+	                    </div>
+	                    <div class="day-component" ng-click="listItems({category: 'carbohidratos'})">
+		                    <span>Carbohidratos</span>
+		                    <div class="menu-image-ico">
+			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-carbo.svg" type="image/svg+xml" />
+		                    </div>
+		                    <span class="menu-add">Agregar</span>
+	                    </div>
+	                    <div class="day-component" ng-click="listItems({category: 'vegetales'})">
+		                    <span>Vegetales</span>
+		                    <div class="menu-image-ico">
+			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-veg.svg" type="image/svg+xml" />
+		                    </div>
+		                    <span class="menu-add">Agregar</span>
+	                    </div>
+	                    <div class="day-component" ng-click="listItems({category: 'postre'})">
+		                    <span>Postre</span>
+		                    <div class="menu-image-ico">
+			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-post.svg" type="image/svg+xml" />
+		                    </div>
+		                    <span class="menu-add">Agregar</span>
+	                    </div>
+                    </div>
+                </div>
+			</div>
+		</pane>
+		<pane title="Ver Lista">
+			<h1>Panel 2</h1>
+		</pane>
+		<pane title="Previsualizar">
+			<h1>Panel 3</h1>
+		</pane>
+	</tabs>
 </div>

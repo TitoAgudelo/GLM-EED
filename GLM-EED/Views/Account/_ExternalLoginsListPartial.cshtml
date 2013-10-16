@@ -36,7 +36,7 @@
                 <p>
                 @foreach (AuthenticationClientData p in Model)
                 {
-                    <a ng-show="@p.AuthenticationClient.ProviderName"><button class="socialBtn" type="submit" name="provider" value="@p.AuthenticationClient.ProviderName"
+                    <a href='/' ng-show="@p.AuthenticationClient.ProviderName"><button class="socialBtn" type="submit" name="provider" value="@p.AuthenticationClient.ProviderName"
                         title="Log in using your @p.DisplayName account"><img src='@p.ExtraData["Icon"].ToString()' /></button></a>
                 }
                 </p>

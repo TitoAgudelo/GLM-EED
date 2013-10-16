@@ -297,6 +297,7 @@
     <Content Include="Scripts\AngularProject\controllers.js" />
     <Content Include="Scripts\AngularProject\directives.js" />
     <Content Include="Scripts\AngularProject\filters.js" />
+    <Content Include="Scripts\AngularProject\components.js" />
     <Content Include="Scripts\AngularProject\services.js" />
     <Content Include="Scripts\Angular\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\Angular\angular-bootstrap-prettify.min.js" />

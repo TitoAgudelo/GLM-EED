@@ -1,5 +1,34 @@
 /* menu options */
 
+
+.tabbable ul.nav li {
+	display: inline;
+}
+
+.tabbable ul.nav li a {
+	background-color: #E6E6E6;
+	color: #9F9F9F;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5em;
+	padding: 12px 15px;
+	text-align: center;
+	width: 22%;
+}
+
+.tab-content>.active, .pill-content>.active {
+	display: block !important;
+}
+
+.tabbable .nav-tabs>.active a{
+	background-color: #49A9F3;
+	color: white;
+}
+
+.tab-content>.tab-pane, .pill-content>.pill-pane {
+	display: none;
+}
+
 .menu-desing span {
 	background-color: #E6E6E6;
 	color: #9F9F9F;
@@ -85,7 +114,8 @@
 }
 
 .menu-components .day-component span {
-    display: inline-block;    
+    display: inline-block;
+    width: 86%;   
 }
 
 .menu-components .menu-image-ico, .menu-add {

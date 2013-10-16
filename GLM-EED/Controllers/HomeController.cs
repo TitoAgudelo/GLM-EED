@@ -18,15 +18,15 @@ namespace GLM_EED.Controllers
             return View();
         }
 
-        public ActionResult MenuLunch()
-        {
-            ViewBag.Message = "";
-            if (!Request.IsAuthenticated)
-            {
-                return RedirectToAction("Home", "Menu");
-            }
-            return View();
-        }
+        //public ActionResult MenuLunch()
+        //{
+        //    ViewBag.Message = "";
+        //    if (!Request.IsAuthenticated)
+        //    {
+        //        return RedirectToAction("Home", "Menu");
+        //    }
+        //    return View();
+        //}
 
     }
 }
