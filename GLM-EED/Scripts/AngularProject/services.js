@@ -16,7 +16,7 @@ services.service('dataService', ['$http', function ($http) {
     };
 
     this.getItems = function (category) {
-        var urlItems = '../api/menuLunch';
+        var urlItems = '../api/menuapi';
         return $http.get(urlItems + category);
     };
 
@@ -37,8 +37,8 @@ services.factory('dataFactory', ['$http', function ($http) {
     };
 
     dataFactory.getItems = function (category) {
-        var urlItems = '../api/menuLunch';
-        return $http.get(urlItems + category);
+        var urlItems = '../api/menuapi';
+        return $http.get(urlItems);
     };
 
     return dataFactory;

@@ -192,6 +192,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AllowAnonymous.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuAPIController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -199,6 +200,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -297,7 +299,6 @@
     <Content Include="Scripts\AngularProject\controllers.js" />
     <Content Include="Scripts\AngularProject\directives.js" />
     <Content Include="Scripts\AngularProject\filters.js" />
-    <Content Include="Scripts\AngularProject\components.js" />
     <Content Include="Scripts\AngularProject\services.js" />
     <Content Include="Scripts\Angular\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\Angular\angular-bootstrap-prettify.min.js" />

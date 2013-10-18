@@ -2,7 +2,7 @@
    ViewBag.Title = "Home";
 }
 
-<div ng-controller="menuLunch">
+<div ng-controller="menuController">
     <div class="row">
 	    <div class="large-12 columns">
 		    <h1>Men&uacute Escolar</h1>
@@ -76,10 +76,45 @@
 			</div>
 		</pane>
 		<pane title="Ver Lista">
-			<h1>Panel 2</h1>
+            <h1>Panel List</h1>
 		</pane>
 		<pane title="Previsualizar">
 			<h1>Panel 3</h1>
 		</pane>
 	</tabs>
+    <div  ng-show="contentItem">
+        <div class="row content-item">
+            <div class="large-4 columns">
+                <span>Ordenar por:</span>
+                <select>
+                    <option value="Alfabetico">Alfabetico</option>
+                    <option value="category">Categoria</option>
+                </select>
+            </div>
+            <div class="large-4 columns">
+                <span>Buscar: </span>
+                <input type="text" />
+            </div>
+            <div class="large-2 columns">
+                <span class="item-close" ng-click="closeWindow()">Cerrar X</span>
+            </div>
+        </div>
+        <div class="row">
+            <hr />
+        </div>
+        <div class="row">
+            <ul class="large-block-grid-8">
+                <li ng-repeat="item in itemList">
+                    <div class="item-detail">
+                        <div class="menu-image-ico">
+			                <embed class="menu-image-svg" src="~/Images/Menu/Icon-post.svg" type="image/svg+xml" />
+		                </div>
+                        <span>{{ item.Name }}</span>
+                        <span class="detail-like">{{ item.Count }}</span>
+                        <span class="detail-dislike">Dislike</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
