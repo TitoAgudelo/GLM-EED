@@ -35,6 +35,10 @@
     		                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-beb.svg" type="image/svg+xml" />
 		                    </div>
 		                    <span class="menu-add">Agregar</span>
+                            <div class="add-detail" ng-repeat="item in itemList | filter: {active:true, Category:'Jugos'}">
+                                <span class="detail-like">{{ item.Count }}</span>
+                                <span>{{ item.Name }}</span>
+                            </div>
 	                    </div>
 	                    <div class="day-component" ng-click="listItems({category: 'entrada'})">
 		                    <span>Entrada</span>
@@ -42,6 +46,10 @@
 			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-entr.svg" type="image/svg+xml" />
 		                    </div>
 		                    <span class="menu-add">Agregar</span>
+                            <div class="add-detail" ng-repeat="item in itemList | filter: {active:true, Category:'Entradas'}">
+                                <span class="detail-like">{{ item.Count }}</span>
+                                <span>{{ item.Name }}</span>
+                            </div>
 	                    </div>
 	                    <div class="day-component" ng-click="listItems({category: 'proteinas'})">
 		                    <span>Proteinas</span>
@@ -49,6 +57,10 @@
 			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-prot.svg" type="image/svg+xml" />
 		                    </div>
 		                    <span class="menu-add">Agregar</span>
+                            <div class="add-detail" ng-repeat="item in itemList | filter: {active:true , Category:'Proteinas'}">
+                                <span class="detail-like">{{ item.Count }}</span>
+                                <span>{{ item.Name }}</span>
+                            </div>
 	                    </div>
 	                    <div class="day-component" ng-click="listItems({category: 'carbohidratos'})">
 		                    <span>Carbohidratos</span>
@@ -56,6 +68,10 @@
 			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-carbo.svg" type="image/svg+xml" />
 		                    </div>
 		                    <span class="menu-add">Agregar</span>
+                            <div class="add-detail" ng-repeat="item in itemList | filter: {active:true, Category:'Carbohidratos'}">
+                                <span class="detail-like">{{ item.Count }}</span>
+                                <span>{{ item.Name }}</span>
+                            </div>
 	                    </div>
 	                    <div class="day-component" ng-click="listItems({category: 'vegetales'})">
 		                    <span>Vegetales</span>
@@ -63,6 +79,10 @@
 			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-veg.svg" type="image/svg+xml" />
 		                    </div>
 		                    <span class="menu-add">Agregar</span>
+                            <div class="add-detail" ng-repeat="item in itemList | filter: {active:true, Category:'Vegetales'}">
+                                <span class="detail-like">{{ item.Count }}</span>
+                                <span>{{ item.Name }}</span>
+                            </div>
 	                    </div>
 	                    <div class="day-component" ng-click="listItems({category: 'postre'})">
 		                    <span>Postre</span>
@@ -70,6 +90,10 @@
 			                    <embed class="menu-image-svg" src="~/Images/Menu/Icon-post.svg" type="image/svg+xml" />
 		                    </div>
 		                    <span class="menu-add">Agregar</span>
+                            <div class="add-detail" ng-repeat="item in itemList | filter: {active:true, Category:'Postres'}">
+                                <span class="detail-like">{{ item.Count }}</span>
+                                <span>{{ item.Name }}</span>
+                            </div>
 	                    </div>
                     </div>
                 </div>
@@ -88,12 +112,12 @@
                 <span>Ordenar por:</span>
                 <select>
                     <option value="Alfabetico">Alfabetico</option>
-                    <option value="category">Categoria</option>
+                    <option value="category">Count</option>
                 </select>
             </div>
             <div class="large-4 columns">
                 <span>Buscar: </span>
-                <input type="text" />
+                <input type="text" ng-model="search" />
             </div>
             <div class="large-2 columns">
                 <span class="item-close" ng-click="closeWindow()">Cerrar X</span>
@@ -104,13 +128,13 @@
         </div>
         <div class="row">
             <ul class="large-block-grid-8">
-                <li ng-repeat="item in itemList">
-                    <div class="item-detail">
+                <li ng-repeat="item in itemList | filter:search">
+                    <div class="item-detail" ng-click="selectItem(item)">
                         <div class="menu-image-ico">
 			                <embed class="menu-image-svg" src="~/Images/Menu/Icon-post.svg" type="image/svg+xml" />
 		                </div>
-                        <span>{{ item.Name }}</span>
-                        <span class="detail-like">{{ item.Count }}</span>
+                        <span class="name">{{ item.Name }}</span>
+                        <span class="detail-like" class="count">{{ item.Count }}</span>
                         <span class="detail-dislike">Dislike</span>
                     </div>
                 </li>

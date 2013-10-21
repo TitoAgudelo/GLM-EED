@@ -60,6 +60,9 @@ ctrls.controller('menuController', ['$scope', 'dataFactory',
         };
         $scope.closeWindow = function () {
             $scope.contentItem = false;
+        };
+        $scope.selectItem = function (item) {
+            item.active = true;
         }
     }
 ]);
